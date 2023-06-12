@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charest="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <!--icon-->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css"
+        integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--bootatrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+</head>
+<style>
+    a {
+        color: #212529;
+    }
+
+    a:hover {
+        color: #212529;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <!--header starts-->
+    <div id="header">
+        <div class="container">
+            <nav>
+               
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <box-icon name='plus-circle' type='solid' color="#101820" class="close" onclick="closemenu()"></box-icon>
+                </ul>
+                <box-icon name='menu' color="white" class="menu" onclick="openmenu()"></box-icon>
+                <div class="btn2" >
+                    <a href="link" download>Download Cv</a>
+                </div>
+            </nav>
+            <div class="header-text">
+
+                <h1>Hi! I'm <span>Ellen</span></h1>
+                <p>Frontend Wed Developer</p>
+            </div>
+        </div>
+    </div>
+    <!--header ends-->
+
+    <!--about starts-->
+    <div id="about">
+        <div class="about-header">
+            <h1>ABOUT ME</h1>
+            <p>Here you will find more information about me, what I do, and my current skills mostly in terms</br>
+                of programming and technology</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <h1>Get to know me!</h1>
+                    <p>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads
+                        to the success of the overall product. Check out some of my work in the Projects section.</p>
+                </div>
+                <div class="col2">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    </div>
+                    <div class="tab-contents active-tab tab" id="skills">
+
+                        <p><span>HTML</span> <span>CSS</span> <span>Javascript</span> <span>React</span>
+                            <span>Parallax</span> </br>
+                            <span>Nodejs</span> <span>Github</span> <span>Redponsive Design</span>
+                        </p>
+
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <p><span>2020-2022</span></br>
+                                    <span>Mytel Com.Ltd (technical support)</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>no experience with web development</p>
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="tab-contents" id="education">
+
+                        <ul>
+                            <li>
+                                
+                                   
+                               
+                            
+                                    <p><span>2023</span></br>
+                                        Modern React With Redux[2023 Update]</p>
+                                        <a href="" download class="certificate">Download certificate</a>
+                               </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--about ends-->
+
+    <!--project starts-->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-titles">My Projects</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="photos/abstract.png"/>
+                    <div class="layer">
+                        <h3>Abstract</h3>
+                        <a href="https://github.com/homnoom/abstract.git"><box-icon name='link-external' ></box-icon></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photos/selone/freshfruits.jpg"/>
+                    <div class="layer">
+                        <h3>Grocery</h3>
+                        <a href="https://github.com/homnoom/Grocery.git"><box-icon name='link-external' ></box-icon></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="photos/pexels-cottonbro-studio-4865737.jpg"/>
+                    <div class="layer">
+                        <h3>book store api</h3>
+                        <a href=""><box-icon name='link-external'></box-icon></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--project ends-->
+<!--contact starts-->
+
+<div id="contact">
+
+
+<div class="contact-left">
+<h1 class="sub-title">Contact Me</h1>
+
+<div class="social-icons">
+ <a href="https://www.facebook.com/"><box-icon name='facebook-circle' type='logo' ></box-icon></a>
+ <a href=""><box-icon name='twitter' type='logo' ></box-icon></a>
+ <a href=""><box-icon name='instagram-alt' type='logo' ></box-icon></a>
+ <a href=""><box-icon name='linkedin' type='logo' ></box-icon></a>
+</div>
+<form class="email">
+    
+    <a href="mailto:recipient@example.com?subject=Hello%20World&body=I%20hope%20you%20are%20doing%20well">Send Email</a>
+
+
+</form> 
+</div>
+
+
+
+
+<div class="copyright">
+<p>Copyright 2023.Made by Ellen</p><box-icon name='heart' type='solid' color="#facf0f" ></box-icon>
+</div>
+
+
+</div>
+
+
+
+
+
+<!--contact ends-->
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+<!--js for navbar-->
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right =  "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right =  "-200px";
+        }
+    </script>
+</body>
+
+</html>

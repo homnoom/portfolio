@@ -343,12 +343,13 @@ nav ul li a:hover::after {
 
     background-color: var(--abc);
     width: 10rem;
-    padding: 0.8rem 20px;
-align-items: center;
+text-align: center;
+margin-top: 2rem;
 border-radius: 7%;
 text-decoration: none;
 padding:1rem 2rem;
 color:var(--def);
+margin-left: 44%;
 }
 .email:hover{
     border: 3px solid var(--abc);
@@ -409,7 +410,9 @@ color:var(--def);
 
 
 @media (min-width: 600px) and (max-width: 768px) {
-
+body{
+    overflow-x: hidden;
+}
     /*header*/
     .btn2 {
         display: none;
@@ -417,16 +420,16 @@ color:var(--def);
 
     .header-text {
         margin-top: 80%;
-        font-size: 16px;
+        
     }
 
     .header-text h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .menu {
         display: block;
-        font-size: 25px;
+        font-size:4rem;
 
         margin-left: 80%;
     }
@@ -437,7 +440,7 @@ color:var(--def);
         top: 0;
         right: -200px;
         width: 200px;
-        height: 100vh;
+        height: 30vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
@@ -451,6 +454,7 @@ color:var(--def);
     nav ul .close {
         display: block;
         position: absolute;
+        font-size: 3rem;
         top: 5px;
         left: 10rem;
         cursor: pointer;
@@ -489,24 +493,38 @@ color:var(--def);
     }
 
     .about-header {
-        padding: 0 2rem;
+        padding: 0 5rem;
         text-align: center;
     }
-
+    .about-header h1{
+        font-size: 4rem;
+    }
+    .about-header p{
+        font-size: 1.4rem;
+    }
     .col1 {
         flex-basis: 100%;
-        padding: 0 2rem;
+        padding: 0 1rem;
         text-align: center;
     }
-
+    .col1 h1{
+        font-size: 4rem;
+    }
+    .col1 p{
+        font-size: 1.4rem;
+    }
     .col2 {
         flex-basis: 100%;
-        padding: 0 6rem;
+        padding: 0 5rem;
 
 
     }
-
-
+.tab-links{
+    font-size: 1.5rem;
+}
+.tab-contents p{
+    font-size: 1.3rem;
+}
     /*about*/
 
     /*projects*/
@@ -541,6 +559,16 @@ color:var(--def);
 
 
 @media (min-width:500px) and (max-width:600px){
+    .work .layer {
+        width: 80%;
+
+    }
+
+    .work:hover .layer {
+        width: 70%;
+
+    }
+    
     .btn2 {
         display: none;
     }
@@ -556,8 +584,9 @@ color:var(--def);
 
     .menu {
         display: block;
-        font-size: 25px;
-
+        font-size: 3rem;
+position: fixed;
+top:3rem;
         margin-left: 18rem;
     }
 

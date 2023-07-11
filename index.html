@@ -5,7 +5,7 @@
 <head>
     <meta charest="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
@@ -37,23 +37,24 @@
     <div id="header">
         <div class="container">
             <nav>
-               
+
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#project">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <box-icon name='plus-circle' type='solid' color="#101820" class="close" onclick="closemenu()"></box-icon>
+                    <box-icon name='plus-circle' type='solid' color="#101820" class="close" onclick="closemenu()">
+                    </box-icon>
                 </ul>
-                <box-icon name='menu' color="white" class="menu" onclick="openmenu()"></box-icon>
-                <div class="btn2" >
+                <box-icon name='menu' color="black" class="menu" onclick="openmenu()"></box-icon>
+                <div class="btn2">
                     <a href="link" download>Download Cv</a>
                 </div>
             </nav>
             <div class="header-text">
 
-                <h1>Hi! I'm <span>Ellen</span></h1>
+                <h1>Hi! I'm Ellen </h1>
                 <p>Frontend Wed Developer</p>
             </div>
         </div>
@@ -96,7 +97,7 @@
                                     <span>Mytel Com.Ltd (technical support)</span>
                                 </p>
                             </li>
-                            
+
                         </ul>
 
 
@@ -106,14 +107,14 @@
 
                         <ul>
                             <li>
-                                
-                                   
-                               
-                            
-                                    <p><span>2023</span></br>
-                                        Modern React With Redux[2023 Update]</p>
-                                        <a href="" download class="certificate">Download certificate</a>
-                               </li>
+
+
+
+
+                                <p><span>2023</span></br>
+                                    Modern React With Redux[2023 Update]</p>
+                                <a href="" download class="certificate">Download certificate</a>
+                            </li>
                         </ul>
 
                     </div>
@@ -123,89 +124,163 @@
     </div>
     <!--about ends-->
 
-    <!--project starts-->
-    <div id="project">
-        <div class="container">
-            <h1 class="sub-titles">My Projects</h1>
-            <div class="work-list">
 
-                <div class="work">
-                    <img src=""/>
-                    <div class="layer">
-                        <h3>Abstract</h3>
-                        <a href="https://github.com/homnoom/abstract.git"><box-icon name='link-external' ></box-icon></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src=""/>
-                    <div class="layer">
-                        <h3>Grocery</h3>
-                        <a href="https://github.com/homnoom/Grocery.git"><box-icon name='link-external' ></box-icon></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src=""/>
-                    <div class="layer">
-                        <h3>book store api</h3>
-                        <a href="https://github.com/homnoom/book-store-api.git"><box-icon name='link-external'></box-icon></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src=""/>
-                    <div class="layer">
-                        <h3>book store api</h3>
-                        <a href=""><box-icon name='link-external'></box-icon></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src=""/>
-                    <div class="layer">
-                        <h3>book store api</h3>
-                        <a href=""><box-icon name='link-external'></box-icon></a>
-                    </div>
+    <!--portfolio starts-->
+    <div id="portfolio">
+
+        <h1>My Portfolio</h1>
+
+
+
+        <div class="row">
+            <div class="column">
+                <div class="firstdiv">
+                    <img src="images/abstractfigma.png" />
                 </div>
             </div>
-            
+            <div class="column">
+                <div class="content">
+
+                    <h3>Abstract</h3>
+                    <p>I drew inspiration for this project from the website https://www.frontendpractice.com/projects.
+                        This marks my initial endeavor, and although it currently lacks responsiveness, I am dedicated
+                        to enhancing its adaptability across various devices and screen sizes.</p>
+                    <a href="https://github.com/homnoom/abstract.git">
+                        <box-icon name='link-external'></box-icon>
+                    </a>
+
+                </div>
+            </div>
         </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="firstdiv">
+                    <img src="images/weatherfigma.png" />
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+
+                    <h3>weather api</h3>
+                    <p>This weather application incorporates essential information such as humidity, wind speed, and
+                        temperature in degrees Celsius for the current city you search. In the event that the city you
+                        search for is not available in the API I utilize, the application will display "undefined" to
+                        indicate the unavailability of data for that particular location. </p>
+                    <a href="https://github.com/homnoom/weather.git">
+                        <box-icon name='link-external'></box-icon>
+                    </a>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="column">
+                <div class="firstdiv">
+                    <img src="images/bookstorefigma.png" />
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <h3>book store api</h3>
+                    <p>In this book store, you have the freedom to search for any literary content you desire to read.
+                        The underlying API employed in this store is sourced from the Google Book Store, ensuring a
+                        comprehensive collection of titles and information at your fingertips.
+
+
+
+
+                    </p>
+                    <a href="https://github.com/homnoom/book-store-api.git">
+                        <box-icon name='link-external'></box-icon>
+                    </a>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="column">
+                <div class="firstdiv">
+                    <img src="images/groceryfigma.png"/>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+
+
+                    <h3>Grocery</h3>
+                    <p>In this example, the outer container uses flexbox properties (display: flex; justify-content:
+                        center; align-items: center;) to horizontally and vertically center its child elements. By
+                        setting
+                        the height of the container </p>
+                    <a href="https://github.com/homnoom/Grocery.git">
+                        <box-icon name='link-external'></box-icon>
+                    </a>
+
+                </div>
+
+
+            </div>
+        </div>
+
     </div>
-    <!--project ends-->
-<!--contact starts-->
+    <!--portfolio ends-->
+    <!--contact starts-->
 
-<div id="contact">
-
-
-<div class="contact-left">
-<h1 class="sub-title">Contact Me</h1>
-
-<div class="social-icons">
- <a href="https://www.facebook.com/"><box-icon name='facebook-circle' type='logo' ></box-icon></a>
- <a href=""><box-icon name='twitter' type='logo' ></box-icon></a>
- <a href=""><box-icon name='github' type='logo' ></box-icon></a>
- <a href=""><box-icon name='linkedin' type='logo' ></box-icon></a>
-</div>
-<p class="email">
-    
-    <a href="mailto:recipient@example.com?subject=Hello%20World&body=I%20hope%20you%20are%20doing%20well">Send Email</a>
+    <div id="contact">
 
 
-</p> 
-</div>
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/">
+                    <box-icon name='facebook-circle' type='logo'></box-icon>
+                </a>
+                <a href="">
+                    <box-icon name='twitter' type='logo'></box-icon>
+                </a>
+                <a href="">
+                    <box-icon name='github' type='logo'></box-icon>
+                </a>
+                <a href="">
+                    <box-icon name='linkedin' type='logo'></box-icon>
+                </a>
+            </div>
+            <p class="email">
+
+                <a href="mailto:recipient@example.com?subject=Hello%20World&body=I%20hope%20you%20are%20doing%20well">Send
+                    Email</a>
 
 
-
-
-<div class="copyright">
-<p>Copyright 2023.Made by Ellen</p><box-icon name='heart' type='solid' color="#facf0f" ></box-icon>
-</div>
-
-
-</div>
-
+            </p>
+        </div>
 
 
 
 
-<!--contact ends-->
+        <div class="copyright">
+            <p>Copyright 2023.Made by Ellen</p>
+            <box-icon name='heart' type='solid' color="#facf0f"></box-icon>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!--contact ends-->
 
 
 
@@ -227,15 +302,15 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
-<!--js for navbar-->
+    <!--js for navbar-->
     <script>
-        var sidemenu= document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right =  "0";
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
         }
 
-        function closemenu(){
-            sidemenu.style.right =  "-200px";
+        function closemenu() {
+            sidemenu.style.right = "-200px";
         }
     </script>
 </body>
